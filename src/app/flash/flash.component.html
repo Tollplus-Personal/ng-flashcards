@@ -1,0 +1,38 @@
+<div class="card">
+  <header
+    class="card-header"
+    (click)="toggleCard()"
+    [ngClass]="flash.remembered"
+  >
+    <p class="card-header-title">{{ flash.question }}</p>
+    <a
+      class="card-header-icon"
+      href="javascript:void(0)"
+      aria-
+      label="more options"
+    >
+      <span class="icon"
+        ><i class="fas fa-angle-down" aria- hidden="true"></i
+      ></span>
+    </a>
+  </header>
+  <div *ngIf="flash.show">
+    <div class="card-content">
+      <div class="content">{{ flash.answer }}</div>
+    </div>
+    <footer class="card-footer">
+      <a class="card-footer-item" href="#"
+        ><i class="fas fa-check" (click)="markCorrect()"></i
+      ></a>
+      <a class="card-footer-item" href="#"
+        ><i class="fas fa-times" (click)="markIncorrect()"></i
+      ></a>
+      <a class="card-footer-item" href="#"
+        ><i class="fas fa-edit" (click)="editFlash()"></i
+      ></a>
+      <a class="card-footer-item" href="#"
+        ><i class="fas fa-trash" (click)="deleteFlash()"></i
+      ></a>
+    </footer>
+  </div>
+</div>
