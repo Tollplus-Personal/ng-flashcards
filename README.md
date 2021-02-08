@@ -1,10 +1,10 @@
 # NgFlashcards
 
-##Demo of the project
+## Demo of the project
 https://ng-flashcards.netlify.app/
 
 
-##To run thew project 
+## To run thew project 
 Run `npm install` and buld the project using `ng serve --open`
 
 
