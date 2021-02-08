@@ -1,5 +1,7 @@
 # NgFlashcards
 
+##Demo of the project
+https://ng-flashcards.netlify.app/
 
 
 ##To run thew project 
